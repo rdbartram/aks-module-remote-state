@@ -11,5 +11,5 @@ data "null_data_source" "debug_outputs" {
 }
 
 output "debug_config" {
-  value = "${data.null_data_source.debug_outputs.inputs}"
+  value = "${data.null_data_source.debug_outputs[0].outputs}"
 }
